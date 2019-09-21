@@ -5,9 +5,18 @@
  */
 
 require('./bootstrap');
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+
 window.Vue = require('vue');
-window.Swal=require('sweetalert2');
+window.Swal=Swal;
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+  })
+  window.Toast=Toast;
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
