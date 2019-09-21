@@ -32,7 +32,7 @@ custom_fields: [
 callback: function(response){
 Toast.fire({
 type: 'success',
-title: 'Transaction successful'
+title: 'Transaction verified'
 })
 
 setTimeout(() => {
