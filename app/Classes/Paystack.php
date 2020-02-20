@@ -3,9 +3,6 @@
 namespace App\Classes;
 
 class Paystack{
-//Declaring useful variables
-public $email, $reference, $amount;
-
 
 public function verify($ref){
 $header =   "authorization: Bearer " .env("PAYSTACK_SECRET_KEY");
